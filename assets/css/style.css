@@ -1329,8 +1329,8 @@ footer.article-footer {
 }
 
 .article-share-weibo:hover {
-	background: #c64d3e;
-	text-shadow: 0 1px #a13c2f
+	background: #5186d4;
+	text-shadow: 0 1px #2d3f66
 }
 
 .article-share-qrcode:before {
@@ -1357,8 +1357,8 @@ footer.article-footer {
 }
 
 .article-back-to-top:hover {
-	background: #762c54;
-	text-shadow: 0 1px #5e2343
+	background: #369;
+	text-shadow: 0 1px #29527a
 }
 
 .qrcode {
