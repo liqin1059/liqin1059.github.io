@@ -3,7 +3,7 @@ layout: post
 title: echarts 仪表盘
 date: 2019-07-18 20:31:30
 categories: echarts
-tags: 
+tags: [大数据]
 ---
 vue中使用echarts仪表盘
 
