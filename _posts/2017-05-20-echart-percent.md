@@ -1,8 +1,8 @@
 ---
 layout: post
-title: echart设置百分比数据
+title: echarts设置百分比数据
 date: 2017-04-14 12:31:30
-categories: echart
+categories: echarts
 tags: [大数据]
 ---
 设置echart数据中有时会用到百分比数据需要进行配置转换
