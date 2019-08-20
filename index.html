@@ -1,6 +1,5 @@
 ---
 layout: default
 ---
-
+{{ post.content ||split:'<!-- more -->' | first }}
 {% include index.html %}
-{{ post.excerpt | strip_html }}
