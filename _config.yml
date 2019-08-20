@@ -77,6 +77,7 @@ banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 index:
   expand: true           ## default is unexpanding,so you can only see the short description of each post.
   excerpt_link: Read More
+  excerpt_separator:  '<!-- more -->'
 
 close_aside: false  #close sidebar in post page if true
 mathjax: true      #enable mathjax if true
@@ -94,7 +95,7 @@ author:
   zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
   email:      1416385177@qq.com ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:     aLittlePanda  ## e.g. wuchong for https://github.com/wuchong
+  github:     liqin1059 for https://github.com/liqin1059  ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
@@ -111,8 +112,9 @@ toc:
 #### Links
 links:
   关于: https://lizzana.github.io/
-  前端网: http://www.qdfuns.com/
-  HTML5资源教程: http://www.html5tricks.com/page/10
+  vue验证码插件: https://www.npmjs.com/package/vue-verification-code
+  vue上传插件: https://www.npmjs.com/package/vue-uploaders
+  vue图片查看插件: https://www.npmjs.com/package/vue-picture-tools
 
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.       website: http://duoshuo.com

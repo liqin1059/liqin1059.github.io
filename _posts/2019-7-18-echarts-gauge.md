@@ -7,6 +7,10 @@ tags:
 ---
 vue中使用echarts仪表盘
 
+vue中使用echarts仪表盘，渐变背景实现，折线面积图（渐变）
+
+<!-- more -->
+
 ```
 npm install echarts --save
 ```
