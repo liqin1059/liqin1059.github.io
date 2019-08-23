@@ -4,8 +4,10 @@ title: vue拖拽插件vuedraggable
 date: 2019-08-30 16:31:30
 categories: vue
 tags: [draggable]
+description: vue拖拽插件vuedraggable
 ---
-vue拖拽插件vuedraggable
+
+
 
 ## 安装
 ```
