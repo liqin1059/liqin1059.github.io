@@ -1,90 +1,169 @@
-# Site settings 配置站点
-title: 'your awesome title'
-description: 'your web description'
-keywords: 'your web keywords, another keywords'
-url: 'https://abc.github.io' # your host
+#### Exclude
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
-# nav 中文字符空格：&emsp;
-nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
-  首页: '/'
-  标签: '/tags.html'
-  时间线: '/timeline.html'
-  关于博主: '/about.html'
-  友情链接: '/friendLink.html'
+#### Code Highlighter
+# 'pygments' is unsupported on GitHub Pages now.
+highlighter: rouge
 
-# 博主
-author: true
-name: 'your awesome name'
-NickName: 'your awesome nickname'
-webtitle: 'your awesome webtitle'
-bio: 'your awesome bio'
-about: true
-aboutyou: 'your introduction'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+#### Permalink
+# For more see: http://jekyllrb.com/docs/permalinks/
+permalink: /:categories/:year/:month/:day/:title
 
-# SNS
-SNS: true
-SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:abc@gmail.com'
-  weixin: '' # 你的微信二维码存放的地址
-  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  github: ''
-  Codepen: ''
-  weibo: ''
-  instagram: ''
-  Twitter: ''
-  Dribbble: ''
-  Facebook: ''
-  Google: ''
-  zhihu: ''
-  juejin: ''
-  twitch: ''
-
-# 分页
-paginate: 2
-paginatepath: ['page:num']
-
-# since
-footer:
-  since: 2018
-
-# Markdown
+#### Markdown Processors
+# 'redcarpet' is unsupported on GitHub Pages now.
 markdown: kramdown
 kramdown:
-  input: GFM
-# 代码高亮 使用rouge
-highlighter: rouge
-# 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中
-pygmentsTheme: 'default'
+    input: GFM
 
-# 友情链接
-friends:
-  jekyll: 'https://www.jekyll.com.cn/'
+#### Default Attributes
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
-# 评论 最佳体验 在disqus、livere和Gitment之间三选一
-# disqus 评论
-disqus: false
-disqus_url: '' # https://abc.disqus.com/embed.js
-# 来必力评论
-livere: true
-livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # MTAyMC8zNDI2OS8xMDgwNg==
-# Gitment评论 OAuth Application
-Gitment: false
-Gitment_owner: ''  # github用户名
-Gitment_repo: ''  # github博客存放的仓库名
-client_id: ''  # 注册 OAuth Application 后获得的 client_id
-client_secret: ''  # 注册 OAuth Application 后获得的 client_secret
+#### Pagination
+paginate: 5
 
-# Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
-social-share: true
-social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
+#### Site
+title : liqin
+tagline: passion determines how far you can go.
+assets: /assets
+baseurl:
 
-# 百度统计 在baidu-url里填写自己相关的url代码
-baidu: true
-baidu-url: ''
-# 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
-google: false
-google-ID: ''
+#### Language
+language: zh-CN    ## blog site languages: en, zh-CN, zh-TW
 
-# 博客头信息备选颜色（该部分在站点中不充当站点变量，将其写在post的头信息中用来充当页面变量）
-color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255)
+#### Menu
+menu:
+  首页: /
+  笔记: /archives
+  关于: /about
+  作品: /product
+## you can create `tags` and `categories` folders (I had created them already).
+## And create a `index.md` file in each of them.
+## set `front-matter`as
+## layout: tags (or categories)
+## title: tags (or categories)
+## ---
+
+#### Widgets
+widgets:
+- category
+- tag
+- tagcloud
+- links
+- douban
+##- github-card
+- rss
+## provide seven widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo,douban
+
+
+#### RSS
+rss: /atom.xml ## RSS address.
+
+#### Image
+imglogo:
+  enable: true             ## display image logo true/false.
+  src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
+favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.
+apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
+banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
+
+#### index post is expanding or not
+index:
+  expand: true           ## default is unexpanding,so you can only see the short description of each post.
+  excerpt_link: Read More
+  excerpt_separator:  '<!-- more -->'
+
+close_aside: false  #close sidebar in post page if true
+mathjax: true      #enable mathjax if true
+share_to: true #enable share-to buttons if true
+
+#### Author information
+author:
+  name: liqin      ## e.g. wuchong Author name
+  intro_line1:  "Hello ,I'm in China."    ## your introduction on the bottom of the page
+  intro_line2:  "This is my blog."  ## the 2nd line
+  weibo:      p/1005053277593043/home?from=page_100505&mod=TAB&is_all=1#place ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  weibo_verifier:  a8d0a320 ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
+  tsina:      鸟姐的伞 ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
+  email:      1416385177@qq.com ## e.g. imjark@gmail.com
+  twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
+  github:     liqin1059 for https://github.com/liqin1059  ## e.g. wuchong for https://github.com/wuchong
+  facebook:   ## e.g. imjark for https://facebook.com/imjark
+  linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
+  google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
+  stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
+## if you set them, the corresponding  share button will show on the footer
+
+#### Toc
+toc:
+  article: true   ## show contents in article.
+  aside: true     ## show contents in aside.
+## you can set both of the value to true of neither of them.
+## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
+
+#### Links
+links:
+  关于: https://lizzana.github.io/
+  vue验证码插件: https://www.npmjs.com/package/vue-verification-code
+  vue上传插件: https://www.npmjs.com/package/vue-uploaders
+  vue图片查看插件: https://www.npmjs.com/package/vue-picture-tools
+
+#### Comment
+duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.       website: http://duoshuo.com
+disqus_shortname:     ## e.g. wuchong   your disqus short name.        website: http://disqus.com
+hypercomments_id:     ## e.g. 91510     your hypercomments widget id.  website: http://hypercomments.com
+## set only one of them
+## duoshuo will be shutting down on June 1, 2017
+
+#### Share button
+jiathis:
+  enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
+  id:    ## e.g. 1889330 your jiathis ID.
+  tsina: ## e.g. 2176287895 Your weibo id,It will be used in share button.
+
+#### Analytics
+google_analytics:
+  enable: false
+  id:        ## e.g. UA-46321946-2 your google analytics ID.
+  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
+## You MUST upgrade to Universal Analytics first!
+## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
+baidu_tongji:
+  enable: true
+  sitecode:  d111ae95a941f5473fa69d51f8252e89 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+cnzz_tongji:
+  enable: false
+  siteid:    ## e.g. 1253575964 your cnzz tongji site id
+
+#### Miscellaneous
+fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
+totop: true           ## if you want to scroll to top in every post set the value to true
+
+#### Custom Search
+google_cse:
+  enable: false
+  cx: 018294693190868310296:abnhpuysycw  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+## https://www.google.com/cse/
+## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
+## set the 'front-matter' as
+## layout: search
+## title: search
+## ---
+baidu_search:     ## http://zn.baidu.com/
+  enable: true
+  id:   bdcsMain ## e.g. "783281470518440642"  for your baidu search id
+  site: https://liqin1059.github.io/  ## your can change to your site instead of the default site
+tinysou_search:     ## http://tinysou.com/
+  enable: false
+  id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
+
+gems:
+ - jemoji
