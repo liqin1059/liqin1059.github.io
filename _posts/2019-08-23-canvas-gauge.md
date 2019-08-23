@@ -6,7 +6,6 @@ categories: canvas
 tags: [大数据]
 ---
 canvas实现仪表盘动画
-
 <center><img src="../assets/img/gauge.gif"></center><br/>
 
 ## canvas进度条

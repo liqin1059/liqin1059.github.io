@@ -6,29 +6,23 @@ categories: vue
 tags: [draggable]
 ---
 vue拖拽插件vuedraggable
-
 ## 安装
 ```
 npm install vuedraggable -s
 ```
 ## 引入
-
 ```
 import draggable from 'vuedraggable';
 ```
-
 ## 组件中声明
 ```
 components: {
   draggable
 }
 ```
-
 ## 使用
-
 - 在vue需要拖拽的列表外层使用（目前是两个列表中拖拽生成）
 * 第一个拖拽列表
-
 ```
 <draggable
     class="dragArea list-group"
@@ -48,7 +42,6 @@ components: {
 </draggable>
 ```
 * 第二个拖拽列表
-
 ```
 <draggable
   class="dragArea list-group"
