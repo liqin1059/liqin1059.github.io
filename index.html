@@ -1,3 +1,5 @@
 ---
-layout: index
+layout: default
 ---
+{{ post.content ||split:'<!-- more -->' | first }}
+{% include index.html %}
