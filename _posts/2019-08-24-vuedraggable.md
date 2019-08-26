@@ -22,7 +22,9 @@ components: {
 ```
 ## 使用
 - 在vue需要拖拽的列表外层使用（目前是两个列表中拖拽生成）
-* 第一个拖拽列表
+
+### 第一个拖拽列表
+
 ```
 <draggable
     class="dragArea list-group"
@@ -41,7 +43,7 @@ components: {
     </div>
 </draggable>
 ```
-* 第二个拖拽列表
+### 第二个拖拽列表
 ```
 <draggable
   class="dragArea list-group"
