@@ -5,7 +5,11 @@ date: 2019-08-30 16:31:30
 categories: vue
 tags: [draggable]
 ---
+
 vue拖拽插件vuedraggable
+
+<!-- more -->
+
 ## 安装
 ```
 npm install vuedraggable -s
