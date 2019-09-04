@@ -6,7 +6,7 @@ categories: canvas
 tags: [大数据]
 ---
 canvas实现仪表盘动画:chart_with_downwards_trend:
-<center><img src="../assets/img/gauge.gif"></center><br/>
+<center><img src="/assets/img/gauge.gif"></center><br/>
 
 ## canvas进度条
 ```
@@ -59,7 +59,7 @@ function smallcircle2(cx, cy, r, color) {
 
 ##  画圆
 
-```
+```javascript
 function circle(cx, cy, r) {
   ctx.beginPath();
   // ctx.moveTo(cx + r, cy);
@@ -75,9 +75,9 @@ function circle(cx, cy, r) {
 ##  画弧线
 - 涉及canvas弧度计算知识
 
-<center><img src="../assets/img/canvas-arc.png"></center><br/>
+<center><img src="/assets/img/canvas-arc.png"></center><br/>
 
-```
+```javascript
 function sector(cx, cy, r, startAngle, endAngle) {
   ctx.beginPath();
   // ctx.moveTo(cx, cy + r); // 从圆形底部开始画
@@ -105,7 +105,7 @@ function sector(cx, cy, r, startAngle, endAngle) {
 
 ##  三角形
 
-```
+```javascript
 function triangle() {
   ctx.beginPath();
   ctx.moveTo(140 + Math.cos(2 * Math.PI / 360 * (135 + process * 2.7)) * 54, 140 + Math.sin(2 * Math.PI / 360 * (135 + process * 2.7)) * 54); // 135->405 process从0到100
@@ -118,7 +118,7 @@ function triangle() {
 
 ##  刷新
 
-```
+```javascript
 function loading() {
   if (process >= percent) {
     clearInterval(circleLoading);
@@ -161,7 +161,7 @@ function loading() {
 
 ## 进度
 
-```
+```javascript
 var process = 0.0;
 var circleLoading = window.setInterval(function() {
   loading();

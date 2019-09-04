@@ -11,24 +11,25 @@ vue中使用echarts仪表盘，渐变背景实现，折线面积图（渐变）
 
 <!-- more -->
 
-```
+```javascript
 npm install echarts --save
 ```
 在组件中引入
 
-```
+```javascript
 import echarts from 'echarts';
 ```
 ## 仪表盘（渐变背景实现）
 
-<center><img src="../assets/img/gauge.png"></center><br/>
+<center><img src="/assets/img/gauge.png"></center><br/>
 
 html创建dom节点
 ```
 <div id="gauge"></div>
 ```
-定义仪表盘数据
-```
+
+> 定义仪表盘数据
+```javascript
 gaugeData: {
   id: 'gauge',
   title: '月达成',
@@ -37,8 +38,10 @@ gaugeData: {
   value: 80
 }
 ```
-方法中实例化echarts
-```
+
+> 方法中实例化echarts
+
+```javascript
 // 仪表盘图
     drawgauge(data) {
       this.gaugeCharts = echarts.init(document.getElementById(data.id));
@@ -149,20 +152,22 @@ gaugeData: {
       this.gaugeCharts.setOption(this.$data.gaugeOptions);
     }
 ```
-生成仪表盘图
-```
+
+> 生成仪表盘图
+
+```javascript
 this.drawgauge(this.$data.gaugeData);
 ```
 ## 折线面积图（渐变）
 
 <center><img src="../assets/img/folder.png"></center><br/>
 
-html创建dom节点
+> html创建dom节点
 ```
 <div id="folder"></div>
 ```
-定义折线图数据
-```
+> 定义折线图数据
+```javascript
 folderData: {
   id: 'folder',
   name: '余额',
@@ -172,8 +177,10 @@ folderData: {
   xAxis: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
 }
 ```
-方法中实例化echarts
-```
+
+> 方法中实例化echarts
+
+```javascript
 // 折线图
     drawFolder(data) {
       this.folderCharts = echarts.init(document.getElementById(data.id));
@@ -301,7 +308,9 @@ folderData: {
       this.folderCharts.setOption(this.$data.folderOptions);
     }
 ```
-生成折线图
-```
+
+> 生成折线图
+
+```javascript
 this.drawFolder(this.$data.folderData);
 ```

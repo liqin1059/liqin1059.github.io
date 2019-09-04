@@ -11,25 +11,30 @@ vue拖拽插件vuedraggable
 <!-- more -->
 
 ## 安装
-```
+```javascript
 npm install vuedraggable -s
 ```
 ## 引入
-```
+
+```javascript
 import draggable from 'vuedraggable';
 ```
+
 ## 组件中声明
-```
+
+```javascript
 components: {
   draggable
 }
 ```
+
 ## 使用
+
 - 在vue需要拖拽的列表外层使用（目前是两个列表中拖拽生成）
 
 ### 第一个拖拽列表
 
-```
+```html
 <draggable
     class="dragArea list-group"
     :group="{ name: 'componentsData', pull: 'clone', put: false }" // 拖拽对象data,是否克隆，是否可放置
@@ -47,8 +52,10 @@ components: {
     </div>
 </draggable>
 ```
+
 ### 第二个拖拽列表
-```
+
+```html
 <draggable
   class="dragArea list-group"
   :group="{ name: 'componentsData', put: true }"
