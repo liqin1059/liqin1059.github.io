@@ -6,7 +6,7 @@ categories: canvas
 tags: [大数据]
 ---
 canvas实现仪表盘动画:chart_with_downwards_trend:
-<center><img src="/assets/img/gauge.gif"></center><br/>
+<img src="/assets/img/gauge.gif"/>
 
 ## canvas进度条
 ```
@@ -75,7 +75,7 @@ function circle(cx, cy, r) {
 ##  画弧线
 - 涉及canvas弧度计算知识
 
-<center><img src="/assets/img/canvas-arc.png"></center><br/>
+<img src="/assets/img/canvas-arc.png"/>
 
 ```javascript
 function sector(cx, cy, r, startAngle, endAngle) {

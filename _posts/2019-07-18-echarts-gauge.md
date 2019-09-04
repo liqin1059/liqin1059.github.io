@@ -21,7 +21,7 @@ import echarts from 'echarts';
 ```
 ## 仪表盘（渐变背景实现）
 
-<center><img src="/assets/img/gauge.png"></center><br/>
+<img src="/assets/img/gauge.png"/>
 
 html创建dom节点
 ```
@@ -160,7 +160,7 @@ this.drawgauge(this.$data.gaugeData);
 ```
 ## 折线面积图（渐变）
 
-<center><img src="../assets/img/folder.png"></center><br/>
+<img src="../assets/img/folder.png"/>
 
 > html创建dom节点
 ```
