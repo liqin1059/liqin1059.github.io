@@ -6,8 +6,12 @@ categories: canvas
 tags: [大数据]
 ---
 canvas实现仪表盘动画:chart_with_downwards_trend:
-
+涉及到canvas圆、弧线、弧线运动、三角形运动、圆形运动
 <img src="/assets/img/gauge.gif"/>
+
+## 首先了解一下 canvas arc()方法
+
+<img src="/assets/img/arc.png"/>
 
 ## canvas进度条
 ```
@@ -105,6 +109,12 @@ function sector(cx, cy, r, startAngle, endAngle) {
 ```
 
 ##  三角形
+
+- 三角形旋转角度计算
+
+<img src="/assets/img/canvas-arc.png"/>
+
+<img src="/assets/img/angle.png"/>
 
 ```javascript
 function triangle() {
