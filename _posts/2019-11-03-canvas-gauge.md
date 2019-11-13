@@ -1,12 +1,13 @@
 ---
-layout: post
 title: canvas实现仪表盘动画
-date: 2019-08-22 9:31:30
 categories: canvas
-tags: [大数据]
+tags: 大数据
 ---
 canvas实现仪表盘动画:chart_with_downwards_trend:
 涉及到canvas圆、弧线、弧线运动、三角形运动、圆形运动
+
+
+
 <img src="/assets/img/gauge.gif"/>
 
 ## 首先了解一下 canvas arc()方法
