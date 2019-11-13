@@ -10,11 +10,11 @@ canvas实现仪表盘动画:chart_with_downwards_trend:
 
 <img src="/assets/img/gauge.gif"/>
 
-## 首先了解一下 canvas arc()方法
+# 首先了解一下 canvas arc()方法
 
 <img src="/assets/img/arc.png"/>
 
-## canvas进度条
+# canvas进度条
 ```
 var canvas = document.getElementById(id);
 var ctx = canvas.getContext('2d');
@@ -44,7 +44,7 @@ canvas.height = canvas.height * ratio;
 ctx.scale(ratio, ratio);
 ```
 
-## 两端圆点
+# 两端圆点
 ```
 // function smallcircle1(cx, cy, r) {
 //   ctx.beginPath();
@@ -63,7 +63,7 @@ function smallcircle2(cx, cy, r, color) {
 }
 ```
 
-##  画圆
+#  画圆
 
 ```javascript
 function circle(cx, cy, r) {
@@ -78,7 +78,7 @@ function circle(cx, cy, r) {
 }
 ```
 
-##  画弧线
+#  画弧线
 - 涉及canvas弧度计算知识
 
 <img src="/assets/img/canvas-arc.png"/>
@@ -109,7 +109,7 @@ function sector(cx, cy, r, startAngle, endAngle) {
 }
 ```
 
-##  三角形
+#  三角形
 
 - 三角形旋转角度计算
 
@@ -128,7 +128,7 @@ function triangle() {
 }
 ```
 
-##  刷新
+#  刷新
 
 ```javascript
 function loading() {
@@ -171,7 +171,7 @@ function loading() {
 };
 ```
 
-## 进度
+# 进度
 
 ```javascript
 var process = 0.0;
