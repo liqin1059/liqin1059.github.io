@@ -11,7 +11,7 @@ DOM方法 addEventListener() 和 removeEventListener()是用来分配和删除�
 - 指定事件处理函数的时期或阶段(boolean)。
 
 ## DOM事件流如图：
-<center><img src="/assets/img/git-guide.jpg" alt=""></center>
+<center><img src="/assets/img/addeventlistener.gif" alt=""></center>
 
 由图可知捕获过程要先于冒泡过程
 
