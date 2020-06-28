@@ -6,7 +6,7 @@ categories: vue
 tags: [draggable]
 ---
 
-vue拖拽插件vuedraggable
+vue拖拽插件vuedraggable使用记录
 
 <!-- more -->
 
