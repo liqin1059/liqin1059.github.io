@@ -2,7 +2,7 @@
 layout: post
 title: webpack4 之html-webpack-plugin
 date: 2020-08-04 12:31:30
-categories: webpack4
+categories: webpack
 tags:
 ---
 # webpack4 之html-webpack-plugin
