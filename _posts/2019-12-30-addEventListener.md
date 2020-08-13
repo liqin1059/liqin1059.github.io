@@ -10,6 +10,7 @@ DOM方法 addEventListener() 和 removeEventListener()是用来分配和删除�
 - 要触发的事件处理函数(Function)
 - 指定事件处理函数的时期或阶段(boolean)。
 
+<!-- more -->
 ## DOM事件流如图：
 <center><img src="/assets/img/addeventlistener.gif" alt=""></center>
 

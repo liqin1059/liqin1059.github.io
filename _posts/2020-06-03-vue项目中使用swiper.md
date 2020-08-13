@@ -6,8 +6,9 @@ categories: vue
 tags:
 ---
 
-Vue中使用 Swiper 
+记录Vue中使用 Swiper 
 
+<!-- more -->
 # 包引入
 > package.json文件引入包版本
 

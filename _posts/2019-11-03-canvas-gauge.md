@@ -7,6 +7,7 @@ canvas实现仪表盘动画:chart_with_downwards_trend:
 涉及到canvas圆、弧线、弧线运动、三角形运动、圆形运动
 
 
+<!-- more -->
 
 <img src="/assets/img/gauge.gif"/>
 
