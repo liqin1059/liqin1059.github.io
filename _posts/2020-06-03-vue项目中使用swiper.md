@@ -4,6 +4,7 @@ title: Vue中使用 Swiper
 date: 2020-06-03 12:31:30
 categories: vue
 tags:
+- swiper
 ---
 
 记录Vue中使用 Swiper 
