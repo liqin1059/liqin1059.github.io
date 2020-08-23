@@ -11,6 +11,7 @@ tags:
 
 event loop是一个执行模型，在不同的地方有不同的实现。浏览器和NodeJS基于不同的技术实现了各自的Event Loop
 <!-- more -->
+
 - 浏览器的Event Loop是在html5的规范中明确定义
 - NodeJS的Event Loop是基于libuv实现的。可以参考Node的官方文档以及libuv的官方文档
 - libuv已经对Event Loop做出了实现，而HTML5规范中只是定义了浏览器中Event Loop的模型，具体的实现留给了浏览器厂商
