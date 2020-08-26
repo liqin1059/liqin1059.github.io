@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JS原型链与继承
-date: 2020-08-20 12:31:30
+date: 2020-07-14 12:31:30
 categories: javascript
 tags:
 
